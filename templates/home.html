@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>
+          Mental Health Tracker
+      </title>
+      <style>
+        body {
+          background-color:powderblue;
+        }
+        input[type=submit] {
+         width: 15em;  height: 3em;
+        }
+        input[type=text] {
+         width: 12em;  height: 2em;
+        }
+      </style>
+        </head>
+    <body>
+       <center>
+           <h1>MENTAL HEALTH TRACKER</h1>
+           <form method="POST", action="{{url_for('home')}}">
+             <b></b><p><h2>Enter your age : </h2></p>  
+             <input type="text", name='a', placeholder="enter age   "> <br>
+             <p><h2>How productive you are today
+             (Rate it in between 1 and 10) :</h2></p> 
+              <input type="text", name='b', placeholder="enter value "> <br>
+             <p><h2>>How many people you met today :</h2></p>  
+             <input type="text", name='c', placeholder="enter number"> <br>
+             <p><h2>How did you felt yesterday    
+              (Enter 1-if happy ,0- if sad ):</h2> </p>
+             <input type="text", name='d', placeholder="enter 1 or 0"> <br></b>
+             <br><br>
+             <input type="submit" , value='PREDICT' >
+         </form>
+       </center>
+    </body>
+</html>
